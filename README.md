@@ -114,7 +114,7 @@ Check that the service is running with "systemctl | grep running"
 After this you should be up and running! 
 # Troubleshooting
 
-The follwoing will help you find the issue:
+The following will help you find the issue:
 
 1. Bans should be populating within /etc/pve/firewall/cluster.fw on the proxmox server. 
 If they are not, check /var/log/fail2networkban.log
