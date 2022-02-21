@@ -113,11 +113,6 @@ Check that the service is running with "systemctl | grep running"
 
 After this you should be up and running! 
 # Troubleshooting
-The first place to look when troubleshooting is /var/log/fail2networkban.log on both the client and the server. When the service first starts up on the server, a log is created. If it does not exist, please manually run the server to determine what the issue could be. You can manually run the server with "python3 server.py"
-
-On the client, a log is not created until fail2ban triggers the action. At that point you should be able to review the log. As with the server, if no log is being created you can manually run the client script to attempt to trigger a ban. This can offer you input as to if there are issues. To manually ban a client from the client. py script run the following command replacing the IP:
-
-python3 client.py "servicename" "ban" "192.168.1.255"
 
 The follwoing will help you find the issue:
 
