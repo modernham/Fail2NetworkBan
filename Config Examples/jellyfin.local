@@ -1,0 +1,7 @@
+[jellyfin]
+findtime  = 3600
+maxretry = 3
+port   = 80,443
+enabled = true
+action = fail2networkban[name=jellyfin, bantime=600]
+logpath = /var/log/jellyfin/*.log

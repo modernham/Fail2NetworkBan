@@ -1,0 +1,16 @@
+[Unit]
+Description = Fail2NetworkBan
+After = network.target # Assuming you want to start after network interfaces are made available
+ 
+[Service]
+Type = simple
+ExecStart = python3 /path/to/server.py
+User = root
+Group = root
+Restart = on-failure
+SyslogIdentifier = fail2networkban.log
+RestartSec = 5
+TimeoutStartSec = infinity
+ 
+[Install]
+WantedBy = multi-user.target
