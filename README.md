@@ -18,8 +18,9 @@ https://www.plesk.com/blog/various/using-fail2ban-to-secure-your-server/
 3. You must have python3 on both client and server. This usually comes by default with fail2ban/proxmox, but you can install it with "sudo apt-get install python3"
 ## Installation Client (Debian/Ubuntu Based Distros):
 
-
-First we will downlaod the client python file called from fail2ban.
+The client is the object that sends failure data to the server. 
+The server/hypervisor will be the object that actually blocks the IP.
+First we will download the client python file called from fail2ban.
 ```bash
 sudo apt-get install wget
 mkdir fail2networkban
