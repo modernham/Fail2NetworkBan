@@ -65,7 +65,7 @@ logpath = /var/log/jellyfin/*.log
 ```
 Next we will restart Fail2Ban and verify its status.
 ```
-service fail2ban restart
+sudo service fail2ban restart
 sudo service fail2ban status
 ```
 
