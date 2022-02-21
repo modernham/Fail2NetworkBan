@@ -20,6 +20,7 @@ https://www.plesk.com/blog/various/using-fail2ban-to-secure-your-server/
 
 The client is the object that sends failure data to the server. 
 The server/hypervisor will be the object that actually blocks the IP.
+
 First we will download the client python file called from fail2ban.
 ```bash
 sudo apt-get install wget
