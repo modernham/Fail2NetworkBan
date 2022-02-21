@@ -11,7 +11,7 @@ I didn't want to use any third party modules, and wanted to keep things as simpl
 1. You must enable the top level firewall for your Proxmox hypervisor
 This can typically be done by navigating to:  Datacenter -> Firewall -> Options -> Firewall Checked 
 
-Also note, you must have a port open for communication with the client if the fireall is not  set to "Accept" , By default this is port 1514
+Also note, you must have a port open for communication with the client if the firewall is not  set to "Accept" , By default this is port 1514
 
 2. You must have a working fail2ban install that obtains valid IPs already. Refer to this link if you need help with this: 
 https://www.plesk.com/blog/various/using-fail2ban-to-secure-your-server/
