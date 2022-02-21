@@ -118,7 +118,7 @@ The follwoing will help you find the issue:
 
 1. Bans should be populating within /etc/pve/firewall/cluster.fw on the proxmox server. 
 If they are not, check /var/log/fail2networkban.log
-2. If /var/log/fail2networkban.log log exists and looks okay, preport the issue with detailed information . If it contains errors, correct the issue. If it does not exist, run the server manually to determine why it's not working with  "python3 server.py" Report Issues.
+2. If /var/log/fail2networkban.log  exists and looks okay, report the issue with detailed information . If it contains errors, correct the issue. If it does not exist, run the server manually to determine why it's not working with  "python3 server.py" Report Issues.
 3. Over on the client check the log /var/log/fail2networkban.log. If it contains errors, correct them. If it does not exist, check /var/log/fail2ban.log to determine if it had problems running the action. Last, run the client manually using python3 client.py "servicename" "ban" "192.168.1.254" to see error output/communication isses with the server. 
 
 To manually unabn a client, in the case of a glitch/bug, you can modify nano /etc/pve/firewall/cluster.fw and remove the ip address from there. 
