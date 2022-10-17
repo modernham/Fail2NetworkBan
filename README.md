@@ -52,7 +52,7 @@ actionunban = python3 /path/to/client.py <name> "unban" <ip>
 
 init = ServiceNameHere Notifications
 ```
-Next we need to moify our jail to point to your custom action so that it sends data to the host.
+Next we need to modify our jail to point to your custom action so that it sends data to the host.
 Open the jail set up for your service. These are typically stored in /etc/fail2ban/jail.d
 
 Change the action to our custom action. An example with my jellyfin install is:
